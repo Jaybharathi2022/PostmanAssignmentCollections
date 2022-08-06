@@ -24,7 +24,7 @@
 					}
 				}
 			],
-			"_postman_id": "ad0fee4e-c580-4aa1-9a25-7024fe1dc566",
+			"id": "ad0fee4e-c580-4aa1-9a25-7024fe1dc566",
 			"protocolProfileBehavior": {
 				"disabledSystemHeaders": {},
 				"disableBodyPruning": true
@@ -68,7 +68,7 @@
 					}
 				}
 			],
-			"_postman_id": "adbd6f33-b139-4e74-84c5-984af3b1e48f",
+			"id": "adbd6f33-b139-4e74-84c5-984af3b1e48f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -95,7 +95,7 @@
 					}
 				}
 			],
-			"_postman_id": "57c7c41c-8302-4e85-a408-b42ce3c75edb",
+			"id": "57c7c41c-8302-4e85-a408-b42ce3c75edb",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -131,7 +131,7 @@
 					}
 				}
 			],
-			"_postman_id": "53722b4f-b722-41be-83a8-1dc99b07ac0f",
+			"id": "53722b4f-b722-41be-83a8-1dc99b07ac0f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -158,7 +158,7 @@
 					}
 				}
 			],
-			"_postman_id": "05bb6a6d-19c6-4409-959b-86574e3db2ac",
+			"id": "05bb6a6d-19c6-4409-959b-86574e3db2ac",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -204,7 +204,7 @@
 					}
 				}
 			],
-			"_postman_id": "5f743ebc-bc69-476f-8b4b-829d371dcf5f",
+			"id": "5f743ebc-bc69-476f-8b4b-829d371dcf5f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -231,7 +231,7 @@
 					}
 				}
 			],
-			"_postman_id": "a3bf15d4-c908-4287-9873-f276ea2ba488",
+			"id": "a3bf15d4-c908-4287-9873-f276ea2ba488",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -246,7 +246,7 @@
 	"auth": {
 		"type": "basic",
 		"basic": {
-			"password": "IrWYsF4ev4EYEfdyBnPk4DD9",
+			"password": "gnOXHCcc5Uu1jPNHjoc20071",
 			"username": "jayabharathi.ushab@gmail.com"
 		}
 	},
@@ -254,7 +254,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "7acb0603-615f-4283-b91f-de749ef076e9",
+				"id": "2c1d1bc5-e143-4456-abd1-e916231ad703",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -264,7 +264,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "be1f7d1c-86b2-4b4b-9e7a-82786c2e7403",
+				"id": "1ea81759-b161-42e1-a759-9d2507e48b3e",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -274,16 +274,14 @@
 	],
 	"variable": [
 		{
-			"id": "add20ead-de06-416d-9c3d-a44e598c0fcd",
+			"id": "3ac38d6d-26f1-4283-aef7-af30398c4574",
 			"key": "projectNamee",
-			"value": "project=\"AP\"",
-			"type": "string"
+			"value": "project=\"AP\""
 		},
 		{
-			"id": "9659652c-bf71-41c5-b901-52b3a1884a22",
+			"id": "9942c6b3-7648-40a8-84a4-c86ff279fc27",
 			"key": "server_Jira",
-			"value": "https://jayabharathi.atlassian.net",
-			"type": "string"
+			"value": "https://jayabharathi.atlassian.net"
 		}
 	]
 }
