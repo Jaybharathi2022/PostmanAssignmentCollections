@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "d40b1056-58f5-4767-863c-5ba633c1a406",
+		"name": "Week3JIRAAssignmentChaining",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateIssue",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "01426ef8-083a-407d-b689-7dcce2dff438",
+						"exec": [
+							"let res=pm.response.json();\r",
+							"pm.globals.set(\"issuee_Idd\",res.id);\r",
+							"pm.globals.set(\"issuee_Keyy\",res.key);\r",
+							"\r",
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "3ffcdf5d-6144-480b-8f5c-e402d38534b0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fields\": {\r\n    \"project\":\r\n                {\r\n                    \"key\": \"AP\"\r\n                },\r\n    \"summary\": \"create issue in RA project\",\r\n    \"description\": \"Creating of an issue using project keys and issue type names using the REST API\",\r\n    \"issuetype\": {\r\n                    \"name\": \"Task\"\r\n                }\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{server}}/rest/api/2/issue/"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateIssue",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8484abe7-ff3f-4494-9691-bd5c21fbea00",
+						"exec": [
+							"pm.test(\"Status code is 204\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "65acd7a9-5b13-4447-8d1c-0fbc569bbbe1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fields\": {\r\n\r\n        \"description\": \"Updating from postman for REST API testing\"\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{server}}/rest/api/2/issue/{{issuee_Idd}}"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteIssue",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "15b94dc6-57ac-4ae1-8505-6a5b6d444f05",
+						"exec": [
+							"pm.test(\"Status code is 204\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "8d572d83-1664-437f-abc6-37e5a9b0a49f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{server}}/rest/api/2/issue/{{issuee_Keyy}}"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": {
+			"password": "IrWYsF4ev4EYEfdyBnPk4DD9",
+			"username": "jayabharathi.ushab@gmail.com"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "11dfcc41-a2db-4a83-8b29-2e81e4b85251",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "26941788-adc7-4ddc-a70c-4209e0317729",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "009d1aba-6470-4e70-8b62-db5e0b0fed4f",
+			"key": "issue_idd",
+			"value": "10057",
+			"type": "string"
+		},
+		{
+			"id": "b3516313-6c21-47b0-b376-69688bafd38d",
+			"key": "server",
+			"value": "https://jayabharathi.atlassian.net",
+			"type": "string"
+		}
+	]
+}
