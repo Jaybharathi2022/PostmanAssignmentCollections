@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "d285e53b-50e8-426a-b91a-a435c4a0081e",
+		"name": "Week2Day1ServiceNow",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateTicket",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "791de39f-45f3-4344-b17a-d7b031a6bc3a",
+						"exec": [
+							"let res=pm.response.json();\r",
+							"pm.globals.set(\"syssidd\",res.result.sys_id);\r",
+							"\r",
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "15dd161b-ef9a-43f1-aa6b-f6b245da4e0c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"short_description\": \"Creating from PostMan\",\r\n    \"description\":\"Testing create incident\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HostServiceNow}}/{{table}}?sysparm_fields={{sys_parmValues}}",
+					"host": [
+						"{{HostServiceNow}}"
+					],
+					"path": [
+						"{{table}}"
+					],
+					"query": [
+						{
+							"key": "sysparm_fields",
+							"value": "{{sys_parmValues}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RetrieveTicket",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"sys_id\");\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"id": "1f484d49-23ea-4c9c-a900-3f39b35ee0f8"
+					}
+				}
+			],
+			"_postman_id": "61c2784a-46ab-48d8-9980-3169eb20692d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{HostServiceNow}}/{{table}}/{{syssidd}}"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateTicket",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d425b407-6fc3-4df4-b3ff-278b4fd8dc9a",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "89399de1-bbba-41b1-95dc-5ecc6cac663a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"short_description\": \"Updating from PostMan\"\r\n       \r\n       \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HostServiceNow}}/{{table}}/{{syssidd}}?sysparm_fields={{sys_parmValues}}",
+					"host": [
+						"{{HostServiceNow}}"
+					],
+					"path": [
+						"{{table}}",
+						"{{syssidd}}"
+					],
+					"query": [
+						{
+							"key": "sysparm_fields",
+							"value": "{{sys_parmValues}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTicket",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8d656ead-f85a-4ed4-9d08-92a6ff85c482",
+						"exec": [
+							"pm.test(\"Status code is 204\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "237e50a6-640f-4eb4-93ce-c20c1afc422c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{HostServiceNow}}/{{table}}/{{syssidd}}"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": {
+			"password": "yxJ37AkXx!I/",
+			"username": "admin"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				],
+				"id": "4fb614c8-18fa-4ef7-a768-e2d6a932433e"
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				],
+				"id": "0c194922-ed39-4b1a-9782-01a49689cd8e"
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "649d1e6c-3795-491c-854b-6199730dc0cf",
+			"key": "HostServiceNow",
+			"value": "https://dev109849.service-now.com/api/now/table/",
+			"type": "string"
+		},
+		{
+			"id": "170ec0ec-9027-4775-a746-b89947031584",
+			"key": "table",
+			"value": "incident",
+			"type": "string"
+		},
+		{
+			"id": "ce64c2cb-2bbd-459a-a04b-d4ffb6f822ac",
+			"key": "sys_parmValues",
+			"value": "sys_id,category,description,short_description",
+			"type": "string"
+		}
+	]
+}
