@@ -21,7 +21,7 @@
 					}
 				}
 			],
-			"_postman_id": "f1cc1a4d-ef4c-42fb-9fea-1f0a736f22ea",
+			"id": "f1cc1a4d-ef4c-42fb-9fea-1f0a736f22ea",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -65,7 +65,7 @@
 					}
 				}
 			],
-			"_postman_id": "ce92349d-0c56-4898-98e9-08cad3a263bf",
+			"id": "ce92349d-0c56-4898-98e9-08cad3a263bf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -97,7 +97,7 @@
 	"auth": {
 		"type": "basic",
 		"basic": {
-			"password": "IrWYsF4ev4EYEfdyBnPk4DD9",
+			"password": "gnOXHCcc5Uu1jPNHjoc20071",
 			"username": "jayabharathi.ushab@gmail.com"
 		}
 	},
@@ -105,7 +105,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "93adae40-4b45-40ab-a5e8-a2ae43afc5b2",
+				"id": "f37fcf24-d0c6-4d1f-8688-b982fc70eb99",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -115,7 +115,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "f578fd9e-e497-443c-b7c1-01dbce2a4c15",
+				"id": "c560ed52-378d-458f-8e19-c695d443b1f9",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -125,28 +125,24 @@
 	],
 	"variable": [
 		{
-			"id": "42111d50-2f69-4b24-bb5c-7293fa9dffb9",
+			"id": "1fe4602d-2a73-4ae3-95b3-d3b16d39a05e",
 			"key": "jqlValue",
-			"value": "project=\"AP\"",
-			"type": "string"
+			"value": "project=\"AP\""
 		},
 		{
-			"id": "e7429d3c-66b7-439f-a0a6-99a66a1bc307",
+			"id": "2d8d0475-a71a-4885-adf1-b52ac56a125d",
 			"key": "jql24HoursVal",
-			"value": "project=AP%26created>=-24h",
-			"type": "string"
+			"value": "project=AP%26created>=-24h"
 		},
 		{
-			"id": "fabc5ce1-214c-4f34-a7cb-ec53a2e1d71f",
+			"id": "7bc40558-4a25-4c94-a297-798402179e8a",
 			"key": "server",
-			"value": "https://jayabharathi.atlassian.net",
-			"type": "string"
+			"value": "https://jayabharathi.atlassian.net"
 		},
 		{
-			"id": "53148606-2639-44d7-9dd9-2b691d73212f",
+			"id": "2ccd02af-baab-45b3-9080-d95b2a9cb95e",
 			"key": "project_name",
-			"value": "project=\"AP\"",
-			"type": "string"
+			"value": "project=\"AP\""
 		}
 	]
 }
