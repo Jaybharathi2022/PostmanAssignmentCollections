@@ -19,7 +19,7 @@ public class GetAllIssuesInJIRA {
 				.given()
 				.auth()
 				.preemptive()
-				.basic("jayabharathi.ushab@gmail.com", "Uaa8Hz1QW6jcAj1NLO3G9AD8")
+				.basic("jayabharathi.ushab@gmail.com", "iE3xhqHGiZJEQ3QRiFa76779")
 				.accept(ContentType.JSON);
 		Response response = inputRequest.get("?jql=project=\"AP\"");
 		response.then().assertThat().statusCode(200);
