@@ -24,7 +24,7 @@ public class BaseRestImpl {
 				.all()
 				.auth()
 				.preemptive()
-				.basic("jayabharathi.ushab@gmail.com", "nk6Sij0nBm771vpZnZB0EE88");
+				.basic("jayabharathi.ushab@gmail.com", "iE3xhqHGiZJEQ3QRiFa76779");
 	}
 	
 	@AfterMethod
