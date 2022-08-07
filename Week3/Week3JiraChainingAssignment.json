@@ -25,7 +25,7 @@
 					}
 				}
 			],
-			"_postman_id": "3ffcdf5d-6144-480b-8f5c-e402d38534b0",
+			"id": "3ffcdf5d-6144-480b-8f5c-e402d38534b0",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -61,7 +61,7 @@
 					}
 				}
 			],
-			"_postman_id": "65acd7a9-5b13-4447-8d1c-0fbc569bbbe1",
+			"id": "65acd7a9-5b13-4447-8d1c-0fbc569bbbe1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -97,7 +97,7 @@
 					}
 				}
 			],
-			"_postman_id": "8d572d83-1664-437f-abc6-37e5a9b0a49f",
+			"id": "8d572d83-1664-437f-abc6-37e5a9b0a49f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -112,7 +112,7 @@
 	"auth": {
 		"type": "basic",
 		"basic": {
-			"password": "IrWYsF4ev4EYEfdyBnPk4DD9",
+			"password": "SovckCP1hH8XIOQMco5922B2",
 			"username": "jayabharathi.ushab@gmail.com"
 		}
 	},
@@ -120,7 +120,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "11dfcc41-a2db-4a83-8b29-2e81e4b85251",
+				"id": "eb66df67-8f51-416d-a0a9-c8747ebb156e",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -130,7 +130,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "26941788-adc7-4ddc-a70c-4209e0317729",
+				"id": "dc1c8945-13f4-44f9-8b55-badf32331365",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -140,16 +140,15 @@
 	],
 	"variable": [
 		{
-			"id": "009d1aba-6470-4e70-8b62-db5e0b0fed4f",
+			"id": "80d709eb-0ea8-423e-88df-db6a8351d014",
 			"key": "issue_idd",
 			"value": "10057",
 			"type": "string"
 		},
 		{
-			"id": "b3516313-6c21-47b0-b376-69688bafd38d",
+			"id": "0598aca6-790e-49d3-9d81-acd477efe38d",
 			"key": "server",
-			"value": "https://jayabharathi.atlassian.net",
-			"type": "string"
+			"value": "https://jayabharathi.atlassian.net"
 		}
 	]
 }
