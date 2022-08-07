@@ -97,7 +97,7 @@
 	"auth": {
 		"type": "basic",
 		"basic": {
-			"password": "Uaa8Hz1QW6jcAj1NLO3G9AD8",
+			"password": "nk6Sij0nBm771vpZnZB0EE88",
 			"username": "jayabharathi.ushab@gmail.com"
 		}
 	},
@@ -105,7 +105,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f08ad8d6-68a6-4a68-8f3c-b9965e2a9cab",
+				"id": "7da8c69d-a501-4d7f-be20-85d553c3ba4c",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -115,7 +115,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "1c72a11e-81f8-4aea-8518-6ca949b148f4",
+				"id": "6896ec17-c170-4dac-a667-7e4b2f22208b",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -125,22 +125,22 @@
 	],
 	"variable": [
 		{
-			"id": "bd2a0a07-e5d5-457b-ab49-584f0afd422b",
+			"id": "7f9da819-43ea-41c5-8378-95a0cb2ec946",
 			"key": "jqlValue",
 			"value": "project=\"AP\""
 		},
 		{
-			"id": "ea13b8e3-0937-4e84-ad79-329069472420",
+			"id": "0592d09b-be63-4486-a2ed-da54b5623648",
 			"key": "jql24HoursVal",
 			"value": "project=AP%26created>=-24h"
 		},
 		{
-			"id": "6439fc5c-3b1c-4c5c-84d0-a2f1382b5011",
+			"id": "b48649ad-6a17-4e9b-8e1e-83559f39c242",
 			"key": "server",
 			"value": "https://jayabharathi.atlassian.net"
 		},
 		{
-			"id": "d32cf679-c49f-4ce1-98a1-fa3fd4f3874b",
+			"id": "238c65fc-2ac5-4d0f-9370-ce96adcdcf4b",
 			"key": "project_name",
 			"value": "project=\"AP\""
 		}
