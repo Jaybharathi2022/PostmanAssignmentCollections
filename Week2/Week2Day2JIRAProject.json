@@ -246,7 +246,7 @@
 	"auth": {
 		"type": "basic",
 		"basic": {
-			"password": "gnOXHCcc5Uu1jPNHjoc20071",
+			"password": "SovckCP1hH8XIOQMco5922B2",
 			"username": "jayabharathi.ushab@gmail.com"
 		}
 	},
@@ -254,7 +254,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "b28936ca-0cc7-4c54-9572-9d02a0b28899",
+				"id": "3b376be6-6a9d-43d6-9d59-db6599608aec",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -264,7 +264,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "f18715c3-d062-40fa-bba8-281dfa1df1ca",
+				"id": "ef5d8a50-30f8-4c23-9b2b-d62b95018c92",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -274,12 +274,12 @@
 	],
 	"variable": [
 		{
-			"id": "293c0592-3223-41df-9e6a-c95000111b4c",
+			"id": "2cc3fd9d-31a2-42ac-821d-de21fb2c8811",
 			"key": "projectNamee",
 			"value": "project=\"AP\""
 		},
 		{
-			"id": "abd93dbb-e1fc-46af-b287-d354aae67b0c",
+			"id": "ddf5a82d-0472-4e26-9cd6-e3bbf2839c74",
 			"key": "server_Jira",
 			"value": "https://jayabharathi.atlassian.net"
 		}
