@@ -108,7 +108,7 @@
 	"auth": {
 		"type": "basic",
 		"basic": {
-			"password": "nk6Sij0nBm771vpZnZB0EE88",
+			"password": "iE3xhqHGiZJEQ3QRiFa76779",
 			"username": "jayabharathi.ushab@gmail.com"
 		}
 	},
@@ -116,7 +116,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "1d4a88c0-364a-4ca1-a470-608177ed8a04",
+				"id": "3161b49e-7b39-4c6f-9cde-15b27e19cc3d",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -126,7 +126,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e04d384a-3fe6-44ac-b1f5-55b9d7a7228c",
+				"id": "7b2c0115-ef82-4d5c-b62c-a86907957325",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -136,7 +136,7 @@
 	],
 	"variable": [
 		{
-			"id": "8da31cd8-a187-4bd8-b1c9-03570c6445e7",
+			"id": "356477cb-7f47-48b6-b144-7fd4fb0e185f",
 			"key": "server",
 			"value": "https://jayabharathi.atlassian.net"
 		}
